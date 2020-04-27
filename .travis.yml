@@ -4,15 +4,15 @@ language: node_js
 node_js:
   - "10"
 
-cache: 
+cache:
   directories:
     - node_modules
 
 install:
-  - npm install
+  - yarn install
 
-build:
-  - npm run build
+script:
+  - yarn build
 
 deploy:
   provider: pages
